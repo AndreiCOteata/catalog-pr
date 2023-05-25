@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 12
+      author: AndreiC
+      changes:
+        - addColumn:
+            tableName: transaction
+            columns:
+              - column:
+                  name: type
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

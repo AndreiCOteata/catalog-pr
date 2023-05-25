@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0005acf0-a094-458f-8fd4-c008274c462b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/exception/DataNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/file/FileWriterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/logger/BaseLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/AccountConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/AddressConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/BankAccountConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/BranchConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/CardConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/DepartmentConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/EmployeeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/ProfileConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/ServiceConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/TransactionConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/base/BaseConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/AccountConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/AddressConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/BankAccountConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/BranchConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/CardConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/DepartmentConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/EmployeeConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/ProfileConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/ServiceConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/converter/impl/TransactionConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/AccountDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/AddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/BankAccountDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/BranchDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/CardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/DepartmentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/EmployeeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/ProfileDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/ServiceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/dto/TransactionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/AccountRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/AddressRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/BankAccountRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/BranchRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/CardRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/DepartmentRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/EmployeeRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/ProfileRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/ServiceRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/TransactionRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/mapper/base/DefaultRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Branch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/AccountImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/AddressImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/BankAccountImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/BranchImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/CardImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/DepartmentImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/EmployeeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/ProfileImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/model/impl/TransactionImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/BankAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/BranchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/CardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/DepartmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/ProfileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/ServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/base/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/AccountRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/AddresRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/BankAccountRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/BranchRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/CardRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/DepartmentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/ProfileRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/ServiceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/TransactionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/service/BankAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/service/BranchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/persistance/service/ProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/reader/AccountReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/service/BankApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/service/ManagementMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/service/UserMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/util/ActionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/util/CustomScannerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibuc/util/PasswordEncryptionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbchangelog/db.changelog-0.1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbchangelog/db.changelog-0.2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbchangelog/db.changelog-0.3.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbchangelog/db.changelog-0.4.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbchangelog/db.changelog-0.5.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbchangelog/db.changelog-0.6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbchangelog/db.changelog-master.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="environmentProperties">
+      <map>
+        <entry key="DATABASE_NAME" value="postgres" />
+        <entry key="DATABASE_PASSWORD" value="postgres" />
+        <entry key="DATABASE_PORT" value="5432" />
+        <entry key="DATABASE_USERNAME" value="postgres" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Pt4o8H4Nz8s7ZZ3K0EtSDZYBwL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;,
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="env" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="DATABASE_NAME" value="postgres" />
+        <env name="DATABASE_PASSWORD" value="postgres" />
+        <env name="DATABASE_PORT" value="5432" />
+        <env name="DATABASE_USERNAME" value="postgres" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="org.unibuc.Main" />
+      <module name="catalog-pr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.unibuc.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="catalog-pr [liquibase:update]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="emulateTerminal" value="false" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="useMavenConfig" value="false" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map>
+                <entry key="DATABASE_NAME" value="postgres" />
+                <entry key="DATABASE_PASSWORD" value="postgres" />
+                <entry key="DATABASE_PORT" value="5432" />
+                <entry key="DATABASE_USERNAME" value="postgres" />
+              </map>
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="liquibase:update" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0005acf0-a094-458f-8fd4-c008274c462b" name="Changes" comment="" />
+      <created>1684263218237</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684263218237</updated>
+      <workItem from="1684263219235" duration="3581000" />
+      <workItem from="1684575915625" duration="528000" />
+      <workItem from="1684685182769" duration="12686000" />
+      <workItem from="1684777628573" duration="11580000" />
+      <workItem from="1684840229429" duration="15580000" />
+      <workItem from="1684915081296" duration="24396000" />
+      <workItem from="1685000685121" duration="11845000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/unibuc/persistance/service/AddressService.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/unibuc/persistance/repository/impl/AddresRepositoryImpl.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

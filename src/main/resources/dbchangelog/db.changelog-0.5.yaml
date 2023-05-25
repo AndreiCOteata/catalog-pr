@@ -1,0 +1,190 @@
+databaseChangeLog:
+  - changeSet:
+      id: 8
+      author: AndreiC
+      changes:
+        - createTable:
+            tableName: service
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: account_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_account
+                    references: account(id)
+              - column:
+                  name: started_at
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: service_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+        - addAutoIncrement:
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: public
+            startWith: 1
+            tableName: service
+  - changeSet:
+      id: 9
+      author: AndreiC
+      changes:
+        - createTable:
+            tableName: bank_account
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: ammount
+                  type: bigint
+                  defaultValue: 0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: account_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_account
+                    references: account(id)
+              - column:
+                  name: created_at
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: branch_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_branch
+                    references: branch(id)
+              - column:
+                  name: employee_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_employee
+                    references: employee(id)
+        - addAutoIncrement:
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: public
+            startWith: 1
+            tableName: bank_account
+  - changeSet:
+      id: 10
+      author: AndreiC
+      changes:
+        - createTable:
+            tableName: card
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: number
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: expiry_date
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cvv
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: account_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_account
+                    references: account(id)
+              - column:
+                  name: status
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+        - addAutoIncrement:
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: public
+            startWith: 1
+            tableName: card
+  - changeSet:
+      id: 11
+      author: AndreiC
+      changes:
+        - createTable:
+            tableName: transaction
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: sending_account
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_account_sending
+                    references: account(id)
+              - column:
+                  name: ammount
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: status
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: receiving_account
+                  type: bigint
+        - addAutoIncrement:
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: public
+            startWith: 1
+            tableName: transaction
+                 

@@ -1,0 +1,138 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: AndreiC
+      changes:
+        - createTable:
+            tableName: branch
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: address_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_address
+                    references: address(id)
+              - column:
+                  name: code
+                  type: bigint
+                  constraints:
+                    nullable: false
+                    unique: true
+        - addAutoIncrement:
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: public
+            startWith: 1
+            tableName: branch
+  - changeSet:
+      id: 5
+      author: AndreiC
+      changes:
+        - createTable:
+            tableName: department
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+        - addAutoIncrement:
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: public
+            startWith: 1
+            tableName: department
+  - changeSet:
+      id: 6
+      author: AndreiC
+      changes:
+        - createTable:
+            tableName: employee
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    unique: true
+              - column:
+                  name: profile_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_profile
+                    references: profile(id)
+              - column:
+                  name: position
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: department_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_department
+                    references: department(id)
+              - column:
+                  name: started_at
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: salary
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: branch_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_branch
+                    references: branch(id)
+        - addAutoIncrement:
+            columnDataType: bigint
+            columnName: id
+            defaultOnNull: false
+            generationType: ALWAYS
+            incrementBy: 1
+            schemaName: public
+            startWith: 1
+            tableName: employee
+  - changeSet:
+      id: 7
+      author: AndreiC
+      changes:
+        - addColumn:
+            tableName: department
+            columns:
+              - column:
+                  name: leader
+                  type: bigint
+                  constraints:
+                    nullable: true
+                    foreignKeyName: fk_employee
+                    references: employee(id)
